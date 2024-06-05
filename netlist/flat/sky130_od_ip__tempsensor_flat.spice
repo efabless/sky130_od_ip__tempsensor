@@ -1,0 +1,35 @@
+* NGSPICE file created from sky130_od_ip__tempsensor_flat.ext - technology: sky130A
+
+.subckt sky130_od_ip__tempsensor_flat vbe1_out ena vbg vbe2_out vdd vss
+X0 a_1429_n4304# a_1429_n4304# vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=10
+X1 a_495_638# a_495_638# vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=10
+X2 a_764_n1158# ena vss vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=10
+X3 a_1660_n393# ena vdd vdd sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X4 a_495_638# XQ_BR1.Emitter a_1537_2302# vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=10
+X5 vdd a_1660_n393# XQ_BR1.Emitter vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X6 a_2471_n2640# vbe1_out vbe1_out vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=10
+X7 vss vss XQ_BR1.Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+**devattr s=462400,2720
+X8 vss vbe2_out sky130_fd_pr__diode_pw2nd_05v5 perim=1.8e+06 area=2.025e+11
+X9 a_1537_2302# vbe2_out vbe2_out vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=10
+X10 vdd a_1660_n393# x2.input vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X11 vdd a_1660_n393# XQ_BR1.Emitter vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X12 a_1429_n4304# x2.input a_2471_n2640# vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=10
+X13 vdd a_1660_n393# XQ_BR1.Emitter vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X14 vss vbg sky130_fd_pr__diode_pw2nd_05v5 perim=1.8e+06 area=2.025e+11
+X15 vss vbe1_out sky130_fd_pr__diode_pw2nd_05v5 perim=1.8e+06 area=2.025e+11
+X16 vss ena a_1537_2302# vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=10
+X17 vdd a_1660_n393# XQ_BR1.Emitter vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X18 vdd a_495_638# vbe2_out vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=10
+X19 vdd a_506_n1158# a_506_n1158# vdd sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X20 vdd a_1660_n393# XQ_BR1.Emitter vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X21 a_1660_n393# a_1660_n393# a_764_n1158# vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X22 vss ena sky130_fd_pr__diode_pw2nd_05v5 perim=1.8e+06 area=2.025e+11
+X23 a_1660_n393# a_506_n1158# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X24 a_764_n1158# vbg a_506_n1158# vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X25 vss vss x2.input sky130_fd_pr__pnp_05v5_W3p40L3p40
+**devattr s=462400,2720
+X26 vss ena a_2471_n2640# vss sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=10
+X27 vdd a_1429_n4304# vbe1_out vdd sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=10
+.ends
+

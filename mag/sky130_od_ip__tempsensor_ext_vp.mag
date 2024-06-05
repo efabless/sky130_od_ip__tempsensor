@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713856378
+timestamp 1715712088
 << nwell >>
 rect -584 2916 6610 3202
 rect -584 -4744 -298 2916
@@ -87,7 +87,7 @@ rect 664 -2882 1332 -2834
 rect 812 -3292 1332 -2882
 rect 812 -3532 1342 -3292
 rect 812 -3816 940 -3532
-rect 300 -4660 1278 -4346
+rect 300 -4660 6519 -4346
 rect -527 -4939 -493 -4913
 rect 6519 -4939 6553 -4913
 rect -527 -4973 -467 -4939
@@ -385,11 +385,11 @@ timestamp 1713290077
 transform 1 0 672 0 1 -293
 box -296 -319 296 319
 use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  XQ_BL1 $PDKPATH/libs.ref/sky130_fd_pr/mag
-timestamp 1698934549
+timestamp 1715114612
 transform 1 0 3272 0 1 -2100
 box 0 0 1340 1340
 use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  XQ_BR1
-timestamp 1698934549
+timestamp 1715114612
 transform 1 0 4616 0 1 -2100
 box 0 0 1340 1340
 << labels >>
@@ -405,6 +405,7 @@ flabel metal1 -62 1158 138 1358 0 FreeSans 256 0 0 0 vbe2_out
 port 2 nsew
 flabel locali 30 2508 230 2708 0 FreeSans 256 0 0 0 vss
 port 1 nsew
+flabel metal2 3454 -312 3454 -312 0 FreeSans 800 0 0 0 vp
 << properties >>
 string MASKHINTS_PSDM 4536 -2100 4694 -760
 << end >>

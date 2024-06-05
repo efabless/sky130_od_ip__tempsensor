@@ -138,7 +138,7 @@ lab=vbe2}
 N 215 -180 245 -180 {
 lab=vbg}
 N 1590 -150 1640 -150 {
-lab=vbe2_output}
+lab=vbe2_out}
 N 1590 -300 1640 -300 {
 lab=vbe1_out}
 N 870 -250 880 -250 {
@@ -153,6 +153,18 @@ N 1020 -280 1020 -250 {
 lab=vdd}
 N 1010 -280 1020 -280 {
 lab=vdd}
+N 140 140 740 140 {
+lab=vss}
+N 80 140 140 140 {
+lab=vss}
+N 140 40 140 80 {
+lab=xxx}
+N 340 40 340 80 {
+lab=vbg}
+N 540 40 540 80 {
+lab=vbe1}
+N 740 40 740 80 {
+lab=vbe2}
 C {devices/ipin.sym} 50 -300 0 0 {name=p1 lab=vdd
 }
 C {devices/ipin.sym} 50 -260 0 0 {name=p3 lab=vss
@@ -272,8 +284,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {xschem/buffer.sym} 1440 -270 0 0 {name=x1}
-C {xschem/buffer.sym} 1440 -120 0 0 {name=x2}
+C {buffer.sym} 1440 -270 0 0 {name=x1}
+C {buffer.sym} 1440 -120 0 0 {name=x2}
 C {devices/lab_pin.sym} 1060 -190 0 1 {name=p16 sig_type=std_logic lab=vbe2}
 C {devices/lab_pin.sym} 840 -190 0 0 {name=p17 sig_type=std_logic lab=vbe1}
 C {devices/lab_pin.sym} 1260 -300 0 0 {name=p18 sig_type=std_logic lab=vdd
@@ -318,3 +330,33 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
+C {sky130_fd_pr/diode.sym} 140 110 0 0 {name=D1
+model=diode_pw2nd_05v5
+area=202.5e11
+perim=1.8e6
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 85 140 0 0 {name=p7 sig_type=std_logic lab=vss
+}
+C {sky130_fd_pr/diode.sym} 340 110 0 0 {name=D2
+model=diode_pw2nd_05v5
+area=202.5e11
+perim=1.8e6
+spiceprefix=X
+}
+C {sky130_fd_pr/diode.sym} 540 110 0 0 {name=D3
+model=diode_pw2nd_05v5
+area=202.5e11
+perim=1.8e6
+spiceprefix=X
+}
+C {sky130_fd_pr/diode.sym} 740 110 0 0 {name=D4
+model=diode_pw2nd_05v5
+area=202.5e11
+perim=1.8e6
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 540 40 0 0 {name=p29 sig_type=std_logic lab=vbe1}
+C {devices/lab_pin.sym} 740 40 0 0 {name=p30 sig_type=std_logic lab=vbe2}
+C {devices/lab_pin.sym} 140 40 0 0 {name=p27 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 340 40 0 0 {name=p28 sig_type=std_logic lab=vbg}
