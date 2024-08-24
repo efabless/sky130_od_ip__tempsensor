@@ -1,262 +1,135 @@
-Descend level 3 circuit 1
-Level 3 Appending sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8 to compare queue
-Level 3 Appending sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_lvt to compare queue
-Descend level 3 circuit 2
-Descend level 2 circuit 1
-Level 2 Class sky130_fd_pr__nfet_01v8_QXBCRM is unmatched and will be flattened
-Level 2 Class sky130_fd_pr__nfet_01v8_QXBCRM is unmatched and will be flattened
-Level 2 Class sky130_fd_pr__pfet_01v8_lvt_B5H3CA is unmatched and will be flattened
-Level 2 Class sky130_fd_pr__pfet_01v8_lvt_B5H3CA is unmatched and will be flattened
-Level 2 Class sky130_fd_pr__nfet_01v8_QXBCRM is unmatched and will be flattened
-Level 2 Appending sky130_fd_pr__diode_pw2nd_05v5 sky130_fd_pr__diode_pw2nd_05v5 to compare queue
-Level 2 Class sky130_fd_pr__nfet_01v8_QXBCRM is unmatched and will be flattened
-Level 2 Class sky130_fd_pr__nfet_01v8_QXBCRM is unmatched and will be flattened
-Level 2 Class sky130_fd_pr__pfet_01v8_lvt_B5H3CA is unmatched and will be flattened
-Level 2 Class sky130_fd_pr__pfet_01v8_lvt_B5H3CA is unmatched and will be flattened
-Level 2 Class sky130_fd_pr__nfet_01v8_QXBCRM is unmatched and will be flattened
-Level 2 Appending sky130_fd_pr__pnp_05v5_W3p40L3p40 sky130_fd_pr__pnp_05v5_W3p40L3p40 to compare queue
-Level 2 Appending sky130_fd_pr__pfet_01v8 sky130_fd_pr__pfet_01v8 to compare queue
-Descend level 2 circuit 2
-Descend level 1 circuit 1
-Level 1 Appending buffer buffer to compare queue
-Level 1 Class sky130_fd_pr__diode_pw2nd_05v5_FT76RJ is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__diode_pw2nd_05v5_FT76RJ is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__diode_pw2nd_05v5_FT76RJ is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__diode_pw2nd_05v5_FT76RJ is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__pfet_01v8_lvt_6VRZAW is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__pfet_01v8_lvt_3VR9VM is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__pfet_01v8_3HMWVM is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__nfet_01v8_69TQ3K is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__nfet_01v8_69TQ3K is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__nfet_01v8_QXBCRM is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__pfet_01v8_3HMWVM is unmatched and will be flattened
-Level 1 Class sky130_fd_pr__pfet_01v8_3HMWVM is unmatched and will be flattened
-Descend level 1 circuit 2
 
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
-Circuit sky130_fd_pr__nfet_01v8 port 0 "1" = cell sky130_fd_pr__nfet_01v8 port 0 "1"
-Circuit sky130_fd_pr__nfet_01v8 port 1 "2" = cell sky130_fd_pr__nfet_01v8 port 1 "2"
-Circuit sky130_fd_pr__nfet_01v8 port 2 "3" = cell sky130_fd_pr__nfet_01v8 port 2 "3"
-Circuit sky130_fd_pr__nfet_01v8 port 3 "4" = cell sky130_fd_pr__nfet_01v8 port 3 "4"
-Reordering pins on instance sky130_fd_pr__nfet_01v8:M1
-Reordering pins on instance sky130_fd_pr__nfet_01v8:M2
-Reordering pins on instance sky130_fd_pr__nfet_01v8:M5
-Reordering pins on instance sky130_fd_pr__nfet_01v8:M4
-Reordering pins on instance sky130_fd_pr__nfet_01v8:M5
-Reordering pins on instance sky130_fd_pr__nfet_01v8:M6
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
 Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
-Circuit sky130_fd_pr__pfet_01v8_lvt port 0 "1" = cell sky130_fd_pr__pfet_01v8_lvt port 0 "1"
-Circuit sky130_fd_pr__pfet_01v8_lvt port 1 "2" = cell sky130_fd_pr__pfet_01v8_lvt port 1 "2"
-Circuit sky130_fd_pr__pfet_01v8_lvt port 2 "3" = cell sky130_fd_pr__pfet_01v8_lvt port 2 "3"
-Circuit sky130_fd_pr__pfet_01v8_lvt port 3 "4" = cell sky130_fd_pr__pfet_01v8_lvt port 3 "4"
-Reordering pins on instance sky130_fd_pr__pfet_01v8_lvt:M4
-Reordering pins on instance sky130_fd_pr__pfet_01v8_lvt:M3
-Reordering pins on instance sky130_fd_pr__pfet_01v8_lvt:M1
-Reordering pins on instance sky130_fd_pr__pfet_01v8_lvt:M2
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
 
 Circuit 1 cell sky130_fd_pr__diode_pw2nd_05v5 and Circuit 2 cell sky130_fd_pr__diode_pw2nd_05v5 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__diode_pw2nd_05v5 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__diode_pw2nd_05v5 is a placeholder, treated as a black box.
-Circuit sky130_fd_pr__diode_pw2nd_05v5 port 0 "1" = cell sky130_fd_pr__diode_pw2nd_05v5 port 0 "1"
-Circuit sky130_fd_pr__diode_pw2nd_05v5 port 1 "2" = cell sky130_fd_pr__diode_pw2nd_05v5 port 1 "2"
-Reordering pins on instance sky130_fd_pr__diode_pw2nd_05v5:D1
-Reordering pins on instance sky130_fd_pr__diode_pw2nd_05v5:D2
-Reordering pins on instance sky130_fd_pr__diode_pw2nd_05v5:D3
-Reordering pins on instance sky130_fd_pr__diode_pw2nd_05v5:D4
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__diode_pw2nd_05v5  |Circuit 2: sky130_fd_pr__diode_pw2nd_05v5  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__diode_pw2nd_05v5 and sky130_fd_pr__diode_pw2nd_05v5 are equivalent.
 
 Circuit 1 cell sky130_fd_pr__pnp_05v5_W3p40L3p40 and Circuit 2 cell sky130_fd_pr__pnp_05v5_W3p40L3p40 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__pnp_05v5_W3p40L3p40 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__pnp_05v5_W3p40L3p40 is a placeholder, treated as a black box.
-Circuit sky130_fd_pr__pnp_05v5_W3p40L3p40 port 0 "1" = cell sky130_fd_pr__pnp_05v5_W3p40L3p40 port 0 "1"
-Circuit sky130_fd_pr__pnp_05v5_W3p40L3p40 port 1 "2" = cell sky130_fd_pr__pnp_05v5_W3p40L3p40 port 1 "2"
-Circuit sky130_fd_pr__pnp_05v5_W3p40L3p40 port 2 "3" = cell sky130_fd_pr__pnp_05v5_W3p40L3p40 port 2 "3"
-Reordering pins on instance sky130_fd_pr__pnp_05v5_W3p40L3p40:Q_BL1
-Reordering pins on instance sky130_fd_pr__pnp_05v5_W3p40L3p40:Q_BR1
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pnp_05v5_W3p40L3p |Circuit 2: sky130_fd_pr__pnp_05v5_W3p40L3p 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pnp_05v5_W3p40L3p40 and sky130_fd_pr__pnp_05v5_W3p40L3p40 are equivalent.
 
 Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
-Circuit sky130_fd_pr__pfet_01v8 port 0 "1" = cell sky130_fd_pr__pfet_01v8 port 0 "1"
-Circuit sky130_fd_pr__pfet_01v8 port 1 "2" = cell sky130_fd_pr__pfet_01v8 port 1 "2"
-Circuit sky130_fd_pr__pfet_01v8 port 2 "3" = cell sky130_fd_pr__pfet_01v8 port 2 "3"
-Circuit sky130_fd_pr__pfet_01v8 port 3 "4" = cell sky130_fd_pr__pfet_01v8 port 3 "4"
-Reordering pins on instance sky130_fd_pr__pfet_01v8:M7
-Reordering pins on instance sky130_fd_pr__pfet_01v8:M8
-Reordering pins on instance sky130_fd_pr__pfet_01v8:M3
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
-Level 1 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_QXBCRM in circuit buffer (0)(3 instances)
-Level 1 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_B5H3CA in circuit buffer (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_QXBCRM in circuit buffer (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_B5H3CA in circuit buffer (0)(2 instances)
 
-
-Iteration:   0: Element classes =    2 (+2);                                                  Net groups =    3 (+3)
-Iteration:   1: Element classes =    4 (+2);                                                  Net groups =    6 (+3)
-Iteration:   2: Element classes =    5 (+1);                                                  Net groups =    7 (+1)
-Iteration:   3: Element classes =    5 (+0);                                                  Net groups =    7 (+0)
-Iteration:   4: Element classes =    5 (+0);                                                  Net groups =    7 (+0)
-Iteration:   5: Element classes =    5 (+0);                                                  Net groups =    7 (+0)
-Iteration:   6: Element classes =    5 (+0);                                                  Net groups =    7 (+0)
+Subcircuit summary:
+Circuit 1: buffer                          |Circuit 2: buffer                          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+sky130_fd_pr__pfet_01v8_lvt (2)            |sky130_fd_pr__pfet_01v8_lvt (2)            
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
 Netlists match uniquely.
-Circuit buffer port 1 "output" = cell buffer port 4 "output"
-Circuit buffer port 3 "vss" = cell buffer port 1 "vss"
-Circuit buffer port 4 "vdd" = cell buffer port 0 "vdd"
-Circuit buffer port 2 "vbias" = cell buffer port 2 "vbias"
-Circuit buffer port 0 "input" = cell buffer port 3 "input"
-Reordering pins on instance buffer:1
-Reordering pins on instance buffer:2
+
+Subcircuit pins:
+Circuit 1: buffer                          |Circuit 2: buffer                          
+-------------------------------------------|-------------------------------------------
+output                                     |output                                     
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+vbias                                      |vbias                                      
+input                                      |input                                      
+---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes buffer and buffer are equivalent.
-Level 1 Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RJ in circuit sky130_od_ip__tempsensor_ext_vp (0)(4 instances)
-Level 1 Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 in circuit sky130_od_ip__tempsensor_ext_vp (0)(2 instances)
-Level 1 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_6VRZAW in circuit sky130_od_ip__tempsensor_ext_vp (0)(1 instance)
-Level 1 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_3VR9VM in circuit sky130_od_ip__tempsensor_ext_vp (0)(1 instance)
-Level 1 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_3HMWVM in circuit sky130_od_ip__tempsensor_ext_vp (0)(3 instances)
-Level 1 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_69TQ3K in circuit sky130_od_ip__tempsensor_ext_vp (0)(2 instances)
-Level 1 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_QXBCRM in circuit sky130_od_ip__tempsensor_ext_vp (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RJ in circuit sky130_od_ip__tempsensor_ext_vp (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 in circuit sky130_od_ip__tempsensor_ext_vp (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_6VRZAW in circuit sky130_od_ip__tempsensor_ext_vp (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_3VR9VM in circuit sky130_od_ip__tempsensor_ext_vp (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_3HMWVM in circuit sky130_od_ip__tempsensor_ext_vp (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_69TQ3K in circuit sky130_od_ip__tempsensor_ext_vp (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_QXBCRM in circuit sky130_od_ip__tempsensor_ext_vp (0)(1 instance)
 
 Class sky130_od_ip__tempsensor_ext_vp (0):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_od_ip__tempsensor_ext_vp |Circuit 2: sky130_od_ip__tempsensor_ext_vp 
+-------------------------------------------|-------------------------------------------
+buffer (2)                                 |buffer (2)                                 
+sky130_fd_pr__diode_pw2nd_05v5 (2)         |sky130_fd_pr__diode_pw2nd_05v5 (2)         
+sky130_fd_pr__pnp_05v5_W3p40L3p40 (2)      |sky130_fd_pr__pnp_05v5_W3p40L3p40 (2)      
+sky130_fd_pr__pfet_01v8_lvt (6->2)         |sky130_fd_pr__pfet_01v8_lvt (6->2)         
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (3)                
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+Number of devices: 14                      |Number of devices: 14                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
 
-Iteration:   0: Element classes =    6 (+6);                                                  Net groups =    6 (+6)
-Iteration:   1: Element classes =   12 (+6);                                                  Net groups =   11 (+5)
-Iteration:   2: Element classes =   16 (+4);                                                  Net groups =   11 (+0)
-Iteration:   3: Element classes =   16 (+0);                                                  Net groups =   11 (+0)
-Iteration:   4: Element classes =   16 (+0);                                                  Net groups =   11 (+0)
-
-NET mismatches: Class fragments follow (with fanouts):
-  (1): vp                          ==>   sky130_fd_pr__nfet_01v8:1 = 1
-                         >>>  sky130_fd_pr__nfet_01v8:M5
-                                 sky130_fd_pr__nfet_01v8:2 = 1
-                         >>>  sky130_fd_pr__nfet_01v8:M5
-                                 sky130_fd_pr__pfet_01v8:1 = 2
-                         >>>  sky130_fd_pr__pfet_01v8:M7
-                         >>>  sky130_fd_pr__pfet_01v8:M3
-                                 sky130_fd_pr__pfet_01v8_lvt:2 = 2
-                         >>>  sky130_fd_pr__pfet_01v8_lvt:M1
-                         >>>  sky130_fd_pr__pfet_01v8_lvt:M2
-  (0): vp                          ==>   sky130_fd_pr__pfet_01v8_lvt:2 = 2
-                         >>>  sky130_fd_pr__pfet_01v8_lvt_6VRZAW:XM22/sky130_fd_pr__pfet_01v8_lvt:0
-                         >>>  sky130_fd_pr__pfet_01v8_lvt_3VR9VM:XM11/sky130_fd_pr__pfet_01v8_lvt:0
-                                 sky130_fd_pr__pfet_01v8:1 = 2
-                         >>>  sky130_fd_pr__pfet_01v8_3HMWVM:XM33/sky130_fd_pr__pfet_01v8:0
-                         >>>  sky130_fd_pr__pfet_01v8_3HMWVM:XM77/sky130_fd_pr__pfet_01v8:0
-                                 sky130_fd_pr__nfet_01v8:1 = 1
-                         >>>  sky130_fd_pr__nfet_01v8_69TQ3K:XM55/sky130_fd_pr__nfet_01v8:0
-                                 sky130_fd_pr__nfet_01v8:2 = 1
-                         >>>  sky130_fd_pr__nfet_01v8_69TQ3K:XM55/sky130_fd_pr__nfet_01v8:0
----------------------------
-  (1): vdd                          ==>   sky130_fd_pr__pfet_01v8:1 = 3
-                         >>>  sky130_fd_pr__pfet_01v8:M7
-                         >>>  sky130_fd_pr__pfet_01v8:M8
-                         >>>  sky130_fd_pr__pfet_01v8:M3
-                                 sky130_fd_pr__pfet_01v8:4 = 3
-                         >>>  sky130_fd_pr__pfet_01v8:M7
-                         >>>  sky130_fd_pr__pfet_01v8:M8
-                         >>>  sky130_fd_pr__pfet_01v8:M3
-                                 buffer:vdd = 2
-                         >>>  buffer:1
-                         >>>  buffer:2
-                                 sky130_fd_pr__pfet_01v8_lvt:1 = 2
-                         >>>  sky130_fd_pr__pfet_01v8_lvt:M1
-                         >>>  sky130_fd_pr__pfet_01v8_lvt:M2
-                                 sky130_fd_pr__pfet_01v8_lvt:4 = 2
-                         >>>  sky130_fd_pr__pfet_01v8_lvt:M1
-                         >>>  sky130_fd_pr__pfet_01v8_lvt:M2
-  (0): vdd                          ==>   buffer:vdd = 2
-                         >>>  buffer:x1
-                         >>>  buffer:x2
-                                 sky130_fd_pr__pfet_01v8_lvt:1 = 2
-                         >>>  sky130_fd_pr__pfet_01v8_lvt_6VRZAW:XM22/sky130_fd_pr__pfet_01v8_lvt:0
-                         >>>  sky130_fd_pr__pfet_01v8_lvt_3VR9VM:XM11/sky130_fd_pr__pfet_01v8_lvt:0
-                                 sky130_fd_pr__pfet_01v8_lvt:4 = 2
-                         >>>  sky130_fd_pr__pfet_01v8_lvt_6VRZAW:XM22/sky130_fd_pr__pfet_01v8_lvt:0
-                         >>>  sky130_fd_pr__pfet_01v8_lvt_3VR9VM:XM11/sky130_fd_pr__pfet_01v8_lvt:0
-                                 sky130_fd_pr__pfet_01v8:1 = 3
-                         >>>  sky130_fd_pr__pfet_01v8_3HMWVM:XM33/sky130_fd_pr__pfet_01v8:0
-                         >>>  sky130_fd_pr__pfet_01v8_3HMWVM:XM77/sky130_fd_pr__pfet_01v8:0
-                         >>>  sky130_fd_pr__pfet_01v8_3HMWVM:XM88/sky130_fd_pr__pfet_01v8:0
-                                 sky130_fd_pr__pfet_01v8:4 = 3
-                         >>>  sky130_fd_pr__pfet_01v8_3HMWVM:XM33/sky130_fd_pr__pfet_01v8:0
-                         >>>  sky130_fd_pr__pfet_01v8_3HMWVM:XM77/sky130_fd_pr__pfet_01v8:0
-                         >>>  sky130_fd_pr__pfet_01v8_3HMWVM:XM88/sky130_fd_pr__pfet_01v8:0
----------------------------
-  (1): vss                          ==>   sky130_fd_pr__pnp_05v5_W3p40L3p40:1 = 2
-                         >>>  sky130_fd_pr__pnp_05v5_W3p40L3p40:Q_BL1
-                         >>>  sky130_fd_pr__pnp_05v5_W3p40L3p40:Q_BR1
-                                 sky130_fd_pr__pnp_05v5_W3p40L3p40:2 = 2
-                         >>>  sky130_fd_pr__pnp_05v5_W3p40L3p40:Q_BL1
-                         >>>  sky130_fd_pr__pnp_05v5_W3p40L3p40:Q_BR1
-                                 sky130_fd_pr__nfet_01v8:4 = 3
-                         >>>  sky130_fd_pr__nfet_01v8:M4
-                         >>>  sky130_fd_pr__nfet_01v8:M5
-                         >>>  sky130_fd_pr__nfet_01v8:M6
-                                 sky130_fd_pr__nfet_01v8:1 = 1
-                         >>>  sky130_fd_pr__nfet_01v8:M6
-                                 buffer:vss = 2
-                         >>>  buffer:1
-                         >>>  buffer:2
-                                 sky130_fd_pr__diode_pw2nd_05v5:1 = 4
-                         >>>  sky130_fd_pr__diode_pw2nd_05v5:D1
-                         >>>  sky130_fd_pr__diode_pw2nd_05v5:D2
-                         >>>  sky130_fd_pr__diode_pw2nd_05v5:D3
-                         >>>  sky130_fd_pr__diode_pw2nd_05v5:D4
-  (0): vss                          ==>   buffer:vss = 2
-                         >>>  buffer:x1
-                         >>>  buffer:x2
-                                 sky130_fd_pr__diode_pw2nd_05v5:1 = 4
-                         >>>  /sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_1/sky130_fd_pr__diode_pw2nd_05v5:0
-                         >>>  /sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0/sky130_fd_pr__diode_pw2nd_05v5:0
-                         >>>  /sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_2/sky130_fd_pr__diode_pw2nd_05v5:0
-                         >>>  /sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_3/sky130_fd_pr__diode_pw2nd_05v5:0
-                                 sky130_fd_pr__pnp_05v5_W3p40L3p40:1 = 2
-                         >>>  sky130_fd_pr__rf_pnp_05v5_W3p40L3p40:XQ_BR1/sky130_fd_pr__pnp_05v5_W3p40L3p40:0
-                         >>>  sky130_fd_pr__rf_pnp_05v5_W3p40L3p40:XQ_BL1/sky130_fd_pr__pnp_05v5_W3p40L3p40:0
-                                 sky130_fd_pr__pnp_05v5_W3p40L3p40:2 = 2
-                         >>>  sky130_fd_pr__rf_pnp_05v5_W3p40L3p40:XQ_BR1/sky130_fd_pr__pnp_05v5_W3p40L3p40:0
-                         >>>  sky130_fd_pr__rf_pnp_05v5_W3p40L3p40:XQ_BL1/sky130_fd_pr__pnp_05v5_W3p40L3p40:0
-                                 sky130_fd_pr__nfet_01v8:4 = 3
-                         >>>  sky130_fd_pr__nfet_01v8_69TQ3K:XM44/sky130_fd_pr__nfet_01v8:0
-                         >>>  sky130_fd_pr__nfet_01v8_69TQ3K:XM55/sky130_fd_pr__nfet_01v8:0
-                         >>>  sky130_fd_pr__nfet_01v8_QXBCRM:XM66/sky130_fd_pr__nfet_01v8:0
-                                 sky130_fd_pr__nfet_01v8:1 = 1
-                         >>>  sky130_fd_pr__nfet_01v8_QXBCRM:XM66/sky130_fd_pr__nfet_01v8:0
----------------------------
-  (1): ena                          ==>   sky130_fd_pr__pfet_01v8:2 = 1
-                         >>>  sky130_fd_pr__pfet_01v8:M3
-                                 sky130_fd_pr__nfet_01v8:2 = 1
-                         >>>  sky130_fd_pr__nfet_01v8:M6
-                                 buffer:vbias = 2
-                         >>>  buffer:1
-                         >>>  buffer:2
-                                 sky130_fd_pr__diode_pw2nd_05v5:2 = 1
-                         >>>  sky130_fd_pr__diode_pw2nd_05v5:D1
-  (0): ena                          ==>   buffer:vbias = 2
-                         >>>  buffer:x1
-                         >>>  buffer:x2
-                                 sky130_fd_pr__diode_pw2nd_05v5:2 = 1
-                         >>>  /sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_1/sky130_fd_pr__diode_pw2nd_05v5:0
-                                 sky130_fd_pr__pfet_01v8:2 = 1
-                         >>>  sky130_fd_pr__pfet_01v8_3HMWVM:XM33/sky130_fd_pr__pfet_01v8:0
-                                 sky130_fd_pr__nfet_01v8:2 = 1
-                         >>>  sky130_fd_pr__nfet_01v8_QXBCRM:XM66/sky130_fd_pr__nfet_01v8:0
----------------------------
-Netlists do not match.
-Circuit sky130_od_ip__tempsensor_ext_vp port 5 "vbg" = cell sky130_od_ip__tempsensor_ext_vp port 3 "vbg"
+Subcircuit pins:
+Circuit 1: sky130_od_ip__tempsensor_ext_vp |Circuit 2: sky130_od_ip__tempsensor_ext_vp 
+-------------------------------------------|-------------------------------------------
+vbg                                        |vbg                                        
+ena                                        |ena                                        
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+vbe1_out                                   |vbe1_out                                   
+vbe2_out                                   |vbe2_out                                   
+---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_od_ip__tempsensor_ext_vp and sky130_od_ip__tempsensor_ext_vp are equivalent.
 
-Final result: Netlists do not match.
+Final result: Circuits match uniquely.
+.

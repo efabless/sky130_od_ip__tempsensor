@@ -17,6 +17,8 @@ set circuit2 [readnet spice $hvlib]
 #readnet spice ../netlist/schematic/sky130_od_ip__tempsensor.spice $circuit2
 readnet spice ../netlist/schematic/sky130_od_ip__tempsensor_ext_vp.spice $circuit2
 
+# debug on
+
 #lvs "$circuit1 sky130_od_ip__tempsensor" "$circuit2 sky130_od_ip__tempsensor" \
         $setupfile sky130_od_ip__tempsensor_comp.out
 lvs "$circuit1 sky130_od_ip__tempsensor_ext_vp" "$circuit2 sky130_od_ip__tempsensor_ext_vp" \

@@ -153,18 +153,14 @@ N 1020 -280 1020 -250 {
 lab=vdd}
 N 1010 -280 1020 -280 {
 lab=vdd}
-N 140 140 740 140 {
-lab=vss}
 N 80 140 140 140 {
 lab=vss}
 N 140 40 140 80 {
-lab=xxx}
+lab=ena}
 N 340 40 340 80 {
 lab=vbg}
-N 540 40 540 80 {
-lab=vbe1}
-N 740 40 740 80 {
-lab=vbe2}
+N 140 140 340 140 {
+lab=vss}
 C {devices/ipin.sym} 50 -300 0 0 {name=p1 lab=vdd
 }
 C {devices/ipin.sym} 50 -260 0 0 {name=p3 lab=vss
@@ -332,7 +328,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/diode.sym} 140 110 0 0 {name=D1
 model=diode_pw2nd_05v5
-area=202.5e11
+area=2.025e11
 perim=1.8e6
 spiceprefix=X
 }
@@ -340,23 +336,9 @@ C {devices/lab_pin.sym} 85 140 0 0 {name=p7 sig_type=std_logic lab=vss
 }
 C {sky130_fd_pr/diode.sym} 340 110 0 0 {name=D2
 model=diode_pw2nd_05v5
-area=202.5e11
+area=2.025e11
 perim=1.8e6
 spiceprefix=X
 }
-C {sky130_fd_pr/diode.sym} 540 110 0 0 {name=D3
-model=diode_pw2nd_05v5
-area=202.5e11
-perim=1.8e6
-spiceprefix=X
-}
-C {sky130_fd_pr/diode.sym} 740 110 0 0 {name=D4
-model=diode_pw2nd_05v5
-area=202.5e11
-perim=1.8e6
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 540 40 0 0 {name=p29 sig_type=std_logic lab=vbe1}
-C {devices/lab_pin.sym} 740 40 0 0 {name=p30 sig_type=std_logic lab=vbe2}
 C {devices/lab_pin.sym} 140 40 0 0 {name=p27 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} 340 40 0 0 {name=p28 sig_type=std_logic lab=vbg}

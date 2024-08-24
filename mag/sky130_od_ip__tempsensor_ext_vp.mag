@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1715712088
+timestamp 1724531563
 << nwell >>
 rect -584 2916 6610 3202
 rect -584 -4744 -298 2916
@@ -86,7 +86,6 @@ rect 664 -2834 1020 -2248
 rect 664 -2882 1332 -2834
 rect 812 -3292 1332 -2882
 rect 812 -3532 1342 -3292
-rect 812 -3816 940 -3532
 rect 300 -4660 6519 -4346
 rect -527 -4939 -493 -4913
 rect 6519 -4939 6553 -4913
@@ -103,7 +102,6 @@ rect 4722 2362 4732 2594
 rect -36 2080 1274 2130
 rect 3842 2026 3852 2288
 rect 4758 2026 4768 2288
-rect 70 1368 174 1604
 rect 5594 1586 5714 1612
 rect -64 1154 550 1368
 rect 4090 1148 4100 1366
@@ -328,21 +326,13 @@ rect 4772 -2642 5174 -2637
 rect 4772 -2902 4782 -2642
 rect 5164 -2902 5174 -2642
 rect 4772 -2907 5174 -2902
-use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0
+use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0 paramcells
 timestamp 1713474431
 transform 1 0 553 0 1 -2341
 box -183 -183 183 183
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_1
 timestamp 1713474431
 transform 1 0 1133 0 1 -2725
-box -183 -183 183 183
-use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_2
-timestamp 1713474431
-transform 1 0 1033 0 1 -3639
-box -183 -183 183 183
-use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_3
-timestamp 1713474431
-transform 1 0 129 0 1 1563
 box -183 -183 183 183
 use buffer  x1
 timestamp 1713290077
@@ -352,19 +342,19 @@ use buffer  x2
 timestamp 1713290077
 transform -1 0 6670 0 -1 -4162
 box 726 -1956 5440 496
-use sky130_fd_pr__pfet_01v8_lvt_3VR9VM  XM11
+use sky130_fd_pr__pfet_01v8_lvt_3VR9VM  XM11 paramcells
 timestamp 1713290077
 transform 1 0 4320 0 1 -307
 box -296 -319 296 319
-use sky130_fd_pr__pfet_01v8_lvt_6VRZAW  XM22
+use sky130_fd_pr__pfet_01v8_lvt_6VRZAW  XM22 paramcells
 timestamp 1713290077
 transform 1 0 5662 0 1 551
 box -296 -1191 296 1191
-use sky130_fd_pr__pfet_01v8_3HMWVM  XM33
+use sky130_fd_pr__pfet_01v8_3HMWVM  XM33 paramcells
 timestamp 1713290077
 transform 1 0 1560 0 1 -293
 box -296 -319 296 319
-use sky130_fd_pr__nfet_01v8_69TQ3K  XM44
+use sky130_fd_pr__nfet_01v8_69TQ3K  XM44 paramcells
 timestamp 1713290077
 transform 1 0 664 0 1 -1058
 box -296 -310 296 310
@@ -372,7 +362,7 @@ use sky130_fd_pr__nfet_01v8_69TQ3K  XM55
 timestamp 1713290077
 transform 1 0 2460 0 1 -1054
 box -296 -310 296 310
-use sky130_fd_pr__nfet_01v8_QXBCRM  XM66
+use sky130_fd_pr__nfet_01v8_QXBCRM  XM66 paramcells
 timestamp 1713290077
 transform 1 0 1568 0 1 -1784
 box -1196 -310 1196 310
@@ -385,11 +375,11 @@ timestamp 1713290077
 transform 1 0 672 0 1 -293
 box -296 -319 296 319
 use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  XQ_BL1 $PDKPATH/libs.ref/sky130_fd_pr/mag
-timestamp 1715114612
+timestamp 1723858470
 transform 1 0 3272 0 1 -2100
 box 0 0 1340 1340
 use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  XQ_BR1
-timestamp 1715114612
+timestamp 1723858470
 transform 1 0 4616 0 1 -2100
 box 0 0 1340 1340
 << labels >>

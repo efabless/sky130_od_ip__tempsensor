@@ -9,7 +9,7 @@ X0 a_1000_n100# a_n1000_n188# a_n1058_n100# a_n1160_n274# sky130_fd_pr__nfet_01v
 X0 a_1000_n100# a_n1000_n197# a_n1058_n100# w_n1196_n319# sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=10
 .ends
 
-.subckt buffer input output vbias vss vdd
+.subckt buffer input output vdd vbias vss
 XXM1 input vss m1_2942_n986# m1_772_n974# sky130_fd_pr__nfet_01v8_QXBCRM
 XXM2 output vss output m1_2942_n986# sky130_fd_pr__nfet_01v8_QXBCRM
 XXM3 vdd m1_772_n974# vdd m1_772_n974# sky130_fd_pr__pfet_01v8_lvt_B5H3CA
@@ -49,12 +49,10 @@ X0 a_100_n100# a_n100_n188# a_n158_n100# a_n260_n274# sky130_fd_pr__nfet_01v8 ad
 .ends
 
 .subckt sky130_od_ip__tempsensor_ext_vp vdd vss vbe2_out vbe1_out ena vbg
-Xx1 x1/input vbe2_out ena vss vdd buffer
+Xx1 x1/input vbe2_out vdd ena vss buffer
 Xsky130_fd_pr__diode_pw2nd_05v5_FT76RJ_1 vss ena sky130_fd_pr__diode_pw2nd_05v5_FT76RJ
 Xsky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0 vss vbg sky130_fd_pr__diode_pw2nd_05v5_FT76RJ
-Xx2 x2/input vbe1_out ena vss vdd buffer
-Xsky130_fd_pr__diode_pw2nd_05v5_FT76RJ_2 vss vbe1_out sky130_fd_pr__diode_pw2nd_05v5_FT76RJ
-Xsky130_fd_pr__diode_pw2nd_05v5_FT76RJ_3 vss vbe2_out sky130_fd_pr__diode_pw2nd_05v5_FT76RJ
+Xx2 x2/input vbe1_out vdd ena vss buffer
 XXQ_BR1 x1/input vss vss sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
 XXQ_BL1 x2/input vss vss sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
 XXM22 vdd vdd vp vdd x1/input x1/input vp vp vp vdd x1/input vdd x1/input vdd x1/input
