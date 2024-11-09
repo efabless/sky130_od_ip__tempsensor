@@ -1,0 +1,387 @@
+# this is an initial file supporting physical checks 
+name: sky130_od_ip__tempsensor_ext_vp
+description: Temperature Sensor from -30 to 125
+PDK: sky130A
+cace_format: 5.2
+authorship:
+  designer: Or Dicker
+  company: ''
+  creation_date: March 11, 2024
+  license: Apache 2.0
+paths:
+  root: ..
+  documentation: docs
+  schematic: xschem
+  magic: mag
+  layout: gds
+  netlist: netlist
+pins:
+  vdd:
+    description: Positive analog power supply
+    type: power
+    direction: inout
+    Vmin: '1.6'
+    Vmax: '2.0'
+  vss:
+    description: Analog ground
+    type: ground
+    direction: inout
+    Vmin: '-0.3'
+    Vmax: '0.3'
+  ena:
+    description: Enable signal (1.8 on)
+    type: signal
+    direction: output
+    Vmin: vss
+    Vmax: vdd
+  vbg:
+    description: V bandgap reference (1.2v)
+    type: signal
+    direction: input
+    Vmin: '1.18'
+    Vmax: '1.22'
+  vbe1:
+    description: Analog output signal
+    type: signal
+    direction: output
+    Vmin: vss
+    Vmax: vdd
+  vbe2:
+    description: Analog output signal
+    type: signal
+    direction: output
+    Vmin: vss
+    Vmax: vdd
+default_conditions:
+  vdd:
+    description: Analog power supply voltage
+    display: vdd
+    unit: V
+    typical: '1.8'
+  vss:
+    description: Analog ground
+    display: vss
+    unit: V
+    typical: '0'
+  Rout:
+    description: Output load resistance
+    display: RLoad
+    unit: MΩ
+    typical: '100'
+  Cout:
+    description: Output load capacitance
+    display: CLoad
+    unit: fF
+    maximum: '120'
+  Vcm:
+    description: Common-mode voltage at input
+    display: Vcm
+    unit: V
+    typical: '0'
+  ena:
+    description: Sensor enable
+    display: ena
+    typical: '1.8'
+  temperature:
+    description: Ambient temperature
+    display: Temp
+    unit: °C
+    minimum: '-30'
+    typical: '27'
+    maximum: '125'
+  corner:
+    description: Process corner
+    display: Corner
+    minimum: ss
+    typical: tt
+    maximum: ff
+  iterations:
+    description: Iterations to run
+    display: Iterations
+    minimum: '1'
+    maximum: '10'
+    step: linear
+    stepsize: '1'
+parameters:
+  Idd_enabled:
+    description: Current draw through analog supply, comparator enabled
+    display: Idd
+    unit: µA
+    spec:
+      minimum:
+        value: any
+      typical:
+        value: '10'
+      maximum:
+        value: '20'
+        fail: true
+    conditions:
+      vdd:
+        typical: '1.8'
+      vss:
+        typical: '0.0'
+      ena:
+        typical: '1.8'
+      vbg:
+        minimum: '1.18'
+        typical: '1.2'
+        maximum: '1.22'
+      temperature:
+        typical: '27'
+      corner:
+        minimum: ss
+        typical: tt
+        maximum: ff
+    tool:
+      ngspice:
+        template: dccurrent_vdd.sch
+        format: ascii
+        suffix: .data
+        variables:
+        - 'null'
+        - result
+    name: Idd_enabled
+  Idd_disabled:
+    description: Current draw through analog supply, disabled
+    display: Idd_disabled
+    unit: nA
+    spec:
+      minimum:
+        value: any
+      typical:
+        value: '5'
+      maximum:
+        value: '10'
+        fail: true
+    conditions:
+      vdd:
+        typical: '1.8'
+      vss:
+        typical: '0.0'
+      ena:
+        typical: '0.0'
+      vbg:
+        minimum: '1.18'
+        typical: '1.2'
+        maximum: '1.22'
+      temperature:
+        typical: '27'
+      corner:
+        minimum: ss
+        typical: tt
+        maximum: ff
+    tool:
+      ngspice:
+        template: dccurrent_vdd.sch
+        format: ascii
+        suffix: .data
+        variables:
+        - 'null'
+        - result
+    name: Idd_disabled
+  Respose_time:
+    description: Time to reach 90% of the final temperature value
+    display: Respose_time
+    unit: ms
+    spec:
+      minimum:
+        value: any
+      typical:
+        value: '10'
+      maximum:
+        value: '20'
+        fail: true
+    conditions:
+      vdd:
+        typical: '1.8'
+      vss:
+        typical: '0.0'
+      ena:
+        typical: '1.8'
+      vbg:
+        minimum: '1.18'
+        typical: '1.2'
+        maximum: '1.22'
+      temperature:
+        typical: '27'
+      corner:
+        minimum: ss
+        typical: tt
+        maximum: ff
+    tool:
+      ngspice:
+        template: respose_time.sch
+        format: ascii
+        suffix: .data
+        variables:
+        - result
+    name: Respose_time
+  Temparature_Accuracy_ALL:
+    description: At all corners -30 to 125
+    display: Temparature_Accuracy_ALL
+    unit: C
+    spec:
+      minimum:
+        value: any
+      typical:
+        value: any
+      maximum:
+        value: '5'
+        fail: true
+    conditions:
+      vdd:
+        typical: '1.8'
+      vss:
+        typical: '0.0'
+      ena:
+        typical: '1.8'
+      vbg:
+        minimum: '1.18'
+        typical: '1.2'
+        maximum: '1.22'
+      corner:
+        minimum: ss
+        typical: tt
+        maximum: ff
+    tool:
+      ngspice:
+        template: temperature_all.sch
+        format: ascii
+        suffix: .data
+        variables:
+        - result
+    name: Temparature_Accuracy_ALL
+  Temparature_Accuracy_nominal:
+    description: Test accuracy At 27C
+    display: Temparature_Accuracy_nominal
+    unit: C
+    spec:
+      minimum:
+        value: '-2'
+        fail: true
+      typical:
+        value: '0.5'
+      maximum:
+        value: '2'
+        fail: true
+    conditions:
+      vdd:
+        typical: '1.8'
+      vss:
+        typical: '0.0'
+      ena:
+        typical: '1.8'
+      vbg:
+        minimum: '1.18'
+        typical: '1.2'
+        maximum: '1.22'
+      temperature:
+        typical: '27'
+      corner:
+        minimum: ss
+        typical: tt
+        maximum: ff
+    tool:
+      ngspice:
+        template: temperature.sch
+        format: ascii
+        suffix: .data
+        variables:
+        - result
+    name: Temparature_Accuracy_nominal
+  Supply_Voltage_Sensitivity:
+    description: supply voltage sensitivity
+    display: Supply_Voltage_Sensitivity
+    unit: '%/V'
+    spec:
+      minimum:
+        value: any
+      typical:
+        value: '0.01'
+      maximum:
+        value: '0.05'
+        fail: true
+    conditions:
+      vdd:
+        minimum: '1.6'
+        typical: '1.8'
+        maximum: '2.0'
+      vss:
+        typical: '0.0'
+      ena:
+        typical: '1.8'
+      vbg:
+        minimum: '1.18'
+        typical: '1.2'
+        maximum: '1.22'
+      temperature:
+        typical: '27'
+      corner:
+        minimum: ss
+        typical: tt
+        maximum: ff
+    tool:
+      ngspice:
+        template: supply_sens.sch
+        format: ascii
+        suffix: .data
+        variables:
+        - result
+    name: Supply_Voltage_Sensitivity
+
+  magic_area:
+    spec:
+      area:
+        display: Area
+        description: Total circuit layout area
+        unit: µm²
+        maximum:
+          value: any
+      width:
+        display: Width
+        description: Total circuit layout width
+        unit: µm
+        maximum:
+          value: any
+      height:
+        display: Height
+        description: Total circuit layout height
+        unit: µm
+        maximum:
+          value: any
+    tool:
+      magic_area
+
+  magic_drc:
+    description: Magic DRC
+    display: Magic DRC
+    spec:
+      drc_errors:
+        maximum:
+          value: 0
+    tool:
+      magic_drc:
+        gds_flatten: true
+
+  netgen_lvs:
+    description: Netgen LVS
+    display: Netgen LVS
+    spec:
+      lvs_errors:
+        maximum:
+          value: 0
+    tool:
+      netgen_lvs:
+        script: run_lvs.tcl
+
+  klayout_drc_full:
+    description: KLayout DRC full
+    display: KLayout DRC full
+    spec:
+      drc_errors:
+        maximum:
+          value: 0
+    tool:
+        klayout_drc:
+            args: ['-rd', 'feol=true', '-rd', 'beol=true', '-rd', 'offgrid=true']
+

@@ -86,7 +86,7 @@ rect 4268 -1532 4374 -1332
 rect 4154 -1710 4374 -1532
 rect 756 -1852 3816 -1772
 rect 756 -1856 1898 -1852
-use sky130_fd_pr__nfet_01v8_QXBCRM  XM1
+use sky130_fd_pr__nfet_01v8_QXBCRM  XM1 paramcells
 timestamp 1713290077
 transform 1 0 1929 0 1 -898
 box -1196 -310 1196 310
@@ -94,7 +94,7 @@ use sky130_fd_pr__nfet_01v8_QXBCRM  XM2
 timestamp 1713290077
 transform 1 0 4215 0 1 -898
 box -1196 -310 1196 310
-use sky130_fd_pr__pfet_01v8_lvt_B5H3CA  XM3
+use sky130_fd_pr__pfet_01v8_lvt_B5H3CA  XM3 paramcells
 timestamp 1713290077
 transform 1 0 1955 0 1 -55
 box -1196 -319 1196 319

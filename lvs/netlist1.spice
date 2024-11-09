@@ -13,8 +13,10 @@ x1 vdd vss ena vbe1 vbe1_out buffer
 x2 vdd vss ena vbe2 vbe2_out buffer
 XM1 vbe1 vp vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 m=1
 XM2 vbe2 vp vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 m=5
-XD1 vss ena sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
-XD2 vss vbg sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
+XD1 vss ena sky130_fd_pr__diode_pw2nd_05v5 area=202.5e11 perim=1.8e6
+XD2 vss vbg sky130_fd_pr__diode_pw2nd_05v5 area=202.5e11 perim=1.8e6
+XD3 vss vbe1 sky130_fd_pr__diode_pw2nd_05v5 area=202.5e11 perim=1.8e6
+XD4 vss vbe2 sky130_fd_pr__diode_pw2nd_05v5 area=202.5e11 perim=1.8e6
 .ends
 
 * expanding   symbol:  buffer.sym # of pins=5

@@ -49,5 +49,5 @@ dc V2 0 1.8 0.05
 plot out
 
 .endc"}
-C {xschem/buffer.sym} 460 -310 0 0 {name=x1}
+C {buffer.sym} 460 -310 0 0 {name=x1}
 C {devices/opin.sym} 680 -340 0 0 {name=p1 lab=out}
